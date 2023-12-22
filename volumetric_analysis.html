@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Oil Volume and Rate Over Time</title>
+    <!-- Include Plotly.js library -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Include PapaParse library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.css" rel="stylesheet">
+    <style>
+        #yearSlider1,
+        #yearSlider2 {
+            height: 10px;
+            /* Adjust the height as needed */
+
+            div.noUi-handle {
+                width: 20px;
+                /* Adjust the width as needed */
+                height: 18px;
+                /* Adjust the height as needed */
+
+            }
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ddd;
+            padding: 10px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#" id="oilLink">Oil</a>
+        <a href="#" id="gasLink">Gas</a>
+    </div>
+    <center><h2>Volumetrics</h2></center>
+    <div style="display: flex;">
+        <div id="plotlyGraph1" style="width: 50%;"></div>
+        <div id="plotlyGraph2" style="width: 50%;"></div>
+    </div>
+    <div style="display: flex; width: 98vw;">
+        <div id="yearSlider1" style="width:600px; margin-left: 100px; margin-right: 200px;"></div>
+        <div id="yearSlider2" style="width:600px;"></div>
+
+    </div>
+
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.js"></script>
+    <script src="va_script.js"></script>
+</body>
+
+</html>
